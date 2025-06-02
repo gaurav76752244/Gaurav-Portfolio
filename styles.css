@@ -1,4 +1,3 @@
-
 html {
   scroll-behavior: smooth;
 }
@@ -9,9 +8,9 @@ html {
   --header-bg: #0066cc;
   --header-text: #ffffff;
   --button-bg: #0066cc;
-  --button-hover: #004999;
+  --button-hover: #007d99ef;
   --card-bg: #f9f9f9;
-  --accent: #ff4081;
+  --accent: #c12254;
 }
 
 [data-theme="dark"] {
@@ -22,7 +21,7 @@ html {
   --button-bg: #333;
   --button-hover: #555;
   --card-bg: #1e1e1e;
-  --accent: #ff4081;
+  --accent: #8a3e59;
 }
 
 body {
@@ -172,12 +171,10 @@ footer p {
 .socials a:hover {
   color: #2a9adb;
 }
-
 .contact-info {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 1rem;
   margin-top: 2rem;
 }
 
@@ -187,17 +184,17 @@ footer p {
   text-decoration: none;
   background: var(--card-bg);
   padding: 0.75rem 1.5rem;
-  border-radius: 12px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  border-radius: 15px;
+  box-shadow: 0 4px 12px rgba(216, 210, 210, 0.1);
   transition: all 0.3s ease;
   display: flex;
   align-items: center;
-  gap: 10px;
+  gap: 8px;
 }
 
 .contact-info a:hover {
   background: var(--accent);
-  color: #512d9e;
+  color: #6b569c;
   transform: scale(1.05);
 }
 .hero {
@@ -233,8 +230,8 @@ footer p {
 }
 
 .hero-btn:hover {
-  background-color: #3b1f78;
-  transform: scale(1.05);
+  transform: scale(1.05);
+  box-shadow: 0 6px 16px rgba(90, 46, 166, 0.4);
 }
 .projects {
   background-color: #fff9cc;
@@ -358,4 +355,118 @@ footer p {
 body.dark-mode {
   background-color: #1e1e2f;
   color: #f5f5f5;
+}
+/* Academic Results Section */
+.results-section {
+  padding: 60px 20px;
+  background: linear-gradient(135deg, #f3f3fd, #fefefe);
+  text-align: center;
+}
+
+.results-section .section-title {
+  font-size: 2.5rem;
+  color: #5a2ea6;
+  margin-bottom: 2rem;
+  text-shadow: 1px 1px 3px rgba(90, 46, 166, 0.1);
+}
+
+.education-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+}
+
+.edu-card {
+  background: rgba(207, 174, 231, 0.7);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(200, 200, 255, 0.2);
+  border-radius: 30px;
+  padding: 25px;
+  width: 280px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+  position: relative;
+}
+
+.edu-card:hover {
+  transform: translateY(-10px) scale(1.02);
+  box-shadow: 0 12px 25px rgba(90, 46, 166, 0.2);
+}
+.edu-card h3 {
+  font-size: 1.3rem;
+  color: #3b1f78;
+  margin-bottom: 10px;
+}
+
+.edu-card p {
+  margin: 5px 0;
+  color: #4e3d80;
+  font-weight: 500;
+}
+
+.download-btn {
+  display: inline-block;
+  margin-top: 15px;
+  background: linear-gradient(to right, #5a2ea6, #9370db);
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 50px;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 0.95rem;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 12px rgba(90, 46, 166, 0.2);
+}
+
+.download-btn:hover {
+  background: linear-gradient(to right, #3b1f78, #5a2ea6);
+  transform: scale(1.05);
+  box-shadow: 0 6px 16px rgba(90, 46, 166, 0.4);
+}
+footer{
+  background-color:#1f1f1f
+}
+footer .socials a {
+  margin: 0 10px;
+  color: #c8cccd;
+  text-decoration: none;
+  font-weight: bold;
+  display: inline-flex;
+  align-items: center;
+  transition: color 0.3s ease;
+}
+
+.socials a i {
+  margin-right: 8px;
+  font-size: 20px;
+}
+
+.socials a:hover {
+  color: #db7ebf;
+}
+
+.socials a[href*="linkedin"] i {
+  color: #0077B5;
+}
+
+.socials a[href*="instagram"] i {
+  color: #f80d5c;
+}
+
+.socials a[href*="facebook"] i {
+  color: #1877F2;
+}
+
+.socials a[href*="mailto"] i {
+  color: #c83825;
+}
+
+.section-title {
+  font-size: 3rem;
+  color: #4a2aac;
+  text-align: center;
+  margin-bottom: 2rem;
+  position: relative;
+  font-weight: 600;
 }
