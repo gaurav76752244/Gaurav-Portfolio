@@ -1,7 +1,6 @@
 html {
   scroll-behavior: smooth;
 }
-
 :root {
   --bg-color: #e6d7ff;
   --text-color: #333333;
@@ -10,7 +9,7 @@ html {
   --button-bg: #0066cc;
   --button-hover: #007d99ef;
   --card-bg: #f9f9f9;
-  --accent: #c12254;
+  --accent: #eabe2fdd;
 }
 
 [data-theme="dark"] {
@@ -71,18 +70,11 @@ section {
   margin: auto;
 }
 
-#hero {
-  background: linear-gradient(to right, #00c6ff, #0072ff);
-  color: white;
-  text-align: center;
-  padding: 5rem 2rem;
-  border-radius: 0 0 40px 40px;
-}
-
 #hero h2 {
   font-size: 2.5rem;
   margin-bottom: 1rem;
 }
+
 
 #about img {
   width: 220px;
@@ -150,7 +142,7 @@ button:hover, .download-btn:hover {
 footer {
   text-align: center;
   padding: 2rem;
-  background-color: #1f1f1f;
+  background-color: #2c3e50;
   color: var(--header-text);
   margin-top: 3rem;
 }
@@ -495,4 +487,15 @@ body.dark-mode {
 }
 .profile-pic:hover {
   transform: scale(1.05) rotate(1deg);
+}
+.intro-section {
+  text-align: center;
+  padding: 4px 20px;
+  position: relative;
+}
+
+.top-logo {
+  width: 100px;
+  height: auto;
+  display: block;
 }
